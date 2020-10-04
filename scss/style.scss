@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/********************
+        ЗМІННІ
+********************/
+$mainFont: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$block: block;
+$imgColor: white; 
+
+/*******************
+    Спадкування
+*******************/
+%hover-icon {
+    height: 50px;
+     width: 50px;
+}
+
+// %linear-color {
+//     background-repeat: no-repeat;
+//     background-size: 0 100%;
+//     transition: background-size 1s 0s;
+// }
+
+// %color-hover {
+//     background-size: 100% 100%;
+// }
+
+// .img {
+//     @extend %linear-color;
+//   }
+  
+//   .img:hover {
+//       @extend %color-hover;
+//   }
+
+body {
+    background-color: rgb(240, 119, 96);
+    font-family: $mainFont;
+}
+
+.main {
+    background-color: rgb(99, 176, 201);
+    margin-top: 250px;
+    max-width: 100%;
+    width: 100%;
+    max-height: 250px;
+    display: flex;
+}
+
+.main {
+    .flex-slide {
+        background-color: rgb(119, 196, 221);
+        display: flex;
+        height: auto;
+        cursor: pointer;
+    }
+}
+
+// img
+.main {
+    .flex-slide {
+        .img {
+            width: 100px;
+            max-width: 250px;
+            height: 250px;
+            border: 1px solid rgb(99, 176, 201);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+}
+
+.main {
+    .flex-slide {
+        .img {
+            img  {
+                margin: 0 auto;
+                height: 35px;
+                width: 35px;
+            }
+        }
+    }
+}
+
+// content
+.main {
+    .flex-slide {
+        .content {
+            max-height: 250px;
+            width: 500px;
+            background: white;
+            padding: 80px 15px;
+            display: none;
+        }
+    }
+}
+
+.main {
+    .flex-slide:hover {
+        .img {
+            img  {
+                transition: 0.3s ease-out;
+                @extend %hover-icon;
+            }
+        }
+    }
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.p {
+    font-family: $mainFont;
+    font-size: 16px;
+}
+
+/********************
+        Twitter
+********************/
+.twitter:hover .img  {
+    background-color: rgb(106, 206, 245);
+}
+
+.twitter:hover .content {
+    display: $block;
+}
+
+/***************
+    FACEBOOK
+****************/
+.facebook:hover .img {
+    background-color: rgb(67, 113, 171);
+    // transition: bounce to left;
+}
+
+.facebook:hover .content {
+    display: $block;
+} 
+
+/***************
+    Linkedin
+***************/
+.linkedin:hover .img {
+    background-color: rgb(43, 161, 199);
+}
+
+.linkedin:hover .content {
+    display: $block;
+}
+
+/***************
+    Instagram
+***************/
+.instagram:hover .img {
+    background-color: rgb(116, 180, 32);
+}
+
+.instagram:hover .content {
+    display: $block;
+}
+
+/***************
+    YouTube
+***************/
+.youtube:hover .img {
+    background-color: rgb(198, 36, 34);
+}
+
+
+.youtube:hover .content {
+    display: $block;
+}
+
+/***************
+    Tumblr
+***************/
+.tumblr:hover .img {
+    background-color: rgb(50, 75, 103);
+}
+
+.tumblr:hover .content {
+    display: $block;
+}
+
+/***************
+    Dribble
+***************/
+.dribble:hover .img {
+    background-color: rgb(219, 78, 123);
+}
+
+.dribble:hover .content {
+    display: $block;
+}
+
+
